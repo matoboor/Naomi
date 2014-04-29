@@ -1,0 +1,194 @@
+/* custom fonts */
+
+
+
+html, body {
+	width: 100%;
+	height:100%;
+	margin: 0;
+}
+
+body {
+			background-color: white;
+
+			background-position: 50px 0;
+			background-size: 100%;
+			background-repeat: no-repeat;
+
+			
+}
+
+.bg_wraper {
+	background-color:rgba(240,240,240,0.5);
+}
+.header_wrapper {
+	background-color:white;
+	width:100%;
+	margin: 0 auto;
+}
+.outer_wraper {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.inner_wrapper {
+	width: 95%;
+    margin: 0 auto;
+    
+}
+
+.header {
+	background-color:white;
+	position: relative;
+	height: 100px;
+	width: 70%;
+	margin : 0 auto;
+}
+
+.logo_wraper{
+	float:left;
+	height:100%;
+}
+
+.logo_wraper img {
+	width:100%;
+	height:auto%;
+	max-width: 100%;
+
+}
+
+.calendar {
+	background-color:rgba(240,240,240,0.3);
+	position: absolute;
+	bottom: 0;
+	right:2px;	
+}
+
+#navigation{
+	padding-left:10%;
+	width: 100%;
+	height:40px;
+	background-color: #7f1515;
+}
+
+ul #menu {
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+#menu a {
+	color:white;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:1.4em;
+	font-style:oblique;
+	font-weight:bold;
+	float: left;
+	width: 15%;
+	text-decoration: none;
+
+}
+
+#menu a:hover {
+	color:#7F1515;
+	background-color: #FFFFFF
+}
+
+
+.blank {
+	width: 100%;
+	height: 230px;
+}
+
+.main_wrapper {
+	width: 100%;
+	min-height: 700px;
+	background-color: white;
+	border-top:#7F1515 solid 10px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+}
+
+.main {
+	padding: 25px 40px;
+}
+
+.main h1,h2,h3,h4,h5,h6 {
+	color: #7F1515;
+}
+
+.main h1:before {
+	content:url('../css/images/before_h1.png');
+}
+
+.main h1 {
+	font-size: 2.2em;
+}
+
+.main h2 {
+	font-size: 2em;
+}
+
+.main h3 {
+	font-size: 1.8em;
+}
+
+.main p {
+	font-family:  ;
+	font-size:1.2em;
+	text-align: justify;
+}
+
+.main p img {
+	width:40%;
+	height: auto;
+	max-width:100%;
+	margin: 20px;
+	border: 1px dashed #7F1515;
+	float: right;
+}
+
+.footer_wraper {
+	width:100%;
+	min-height: 100px;
+	background-color: #7F1515;
+	color: white;
+}
+
+.footer {
+	padding: 25px 40px;
+}
+
+/*calendar widget
+ * */
+.calwid_body {
+	font-size:1.1em;
+	padding:3px;
+	margin:3px;
+	color:#000;
+}
+
+.calwid_body a{
+	color:#000;
+	text-decoration: none;
+}
+
+.calwid_day {
+	color:#7F1515;
+	font-weight:bold;
+}
+
+.calwid_name1 {
+	font-weight:bold;
+	color:#7F1515;
+}
+
+.calwid_name2 {
+	color: #7F1515;
+	font-weight:bold;
+}
