@@ -295,8 +295,14 @@ a.button_link:hover {
 	color:white;
 }
 
-footer h3{
+footer h4{
 	color:white;
+}
+
+footer a {
+	color:white;
+	text-decoration: none;
+	border-bottom: 1px dotted white;
 }
 
 /* ==========================================================================

@@ -18,6 +18,10 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="js/responsiveslides.min.js"></script>
 		
+		<script src="js/date.1.js" type="text/javascript" language="JavaScript">
+			
+		</script>
+		
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -48,7 +52,7 @@
 
         <div class="main-container">
         	<div class="nameday-container">
-        		<div class="wrapper">Dnes má meniny <span class="black">Erik</span>, zajtra <span class="black">Viktor</span></div>
+        		<div class="wrapper"> Dnes má meniny <span id="date_meniny" class="black">Erik</span>, zajtra <span id="date_meniny_zajtra" class="black">Viktor</span> </div>
         	</div>
             <div class="main wrapper clearfix">							
 					
@@ -126,18 +130,21 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
-                <p>Vyrobel Koxo</p>
+                <h4>Naomi 2014</h4>
+                <p>webdesign <a href="mailto:matoboor@gmail.com">Koxo</a></p>
+                <!-- hidden element. only for funcionality of nameday widget -->
+                <span id="kasman"><a href="http://www.kasman.sk/javascript"></a></span>
+                <!-- ******************************************************* -->
             </footer>
         </div>
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
 		<script>
   			$(function() {
     			$(".rslides").responsiveSlides({auto:true, speed: 2000, timeout: 6000});
-  				})
+  			});
 		</script>
         
         <script src="js/main.js"></script>
