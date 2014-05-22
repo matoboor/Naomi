@@ -101,6 +101,10 @@ body {
     color: white;
 }
 
+.header-container { 
+	text-align: center;
+	}
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -121,6 +125,7 @@ nav a {
     color: white;
     background: #406d00;
     border-left: 1px solid #537C19;
+    border-right: 1px solid #537C19;
 }
 
 nav a:hover,
@@ -155,62 +160,7 @@ nav a:hover {
     padding: 20px 0;
 }
 
-/* slider */
-	.rslides {
-  		position: relative;
-  		list-style: none;
-  		overflow: hidden;
-  		width: 100%;
-  		padding: 0;
-  		margin: 0;
-  		border-top: 1px solid #406D00;
-  		border-bottom: 1px solid #406D00;
-  		margin-bottom: 50px;
-  	}
 
-	.rslides li {
-  		-webkit-backface-visibility: hidden;
-  		position: absolute;
-  		display: none;
-  		width: 100%;
-  		left: 0;
-  		top: 0;
-  	}
-
-	.rslides li:first-child {
-  		position: relative;
-  		display: block;
-  		float: left;
-  	}
-
-	.rslides img {
-  		display: block;
-  		height: auto;
-  		float: left;
-  		width: 100%;
-  		border: 0;
-  	}
-
-	.slide_caption {
-		position: absolute;
-		display:block;
-		width:30%;
-		height:100%;
-		float:left;
-		background: rgba(0,0,0, 0);
-		color:#2D4C00;
-		text-align: left;
-		font-size: 1.5em;
-		padding-top:15px;
-	}
-	
-	.slide_caption h1 {
-		font-size: 1.3em;
-	}
-
-	.slide_caption p {
-		text-align: right;
-	}
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -305,6 +255,22 @@ footer a {
 	border-bottom: 1px dotted white;
 }
 
+.fb_button {
+	display: none;
+}
+
+.rslides {
+	display: none;
+}
+
+.header_contact {
+	color:white;
+	margin-top:10px;
+}
+
+.search {
+	margin-top:10px;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -331,7 +297,7 @@ footer a {
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
-
+	
     nav ul li {
         display: inline;
     }
@@ -339,6 +305,64 @@ footer a {
     .oldie nav a {
         margin: 0 0.7%;
     }
+    
+    /* slider */
+	.rslides {
+		display:block;
+  		position: relative;
+  		list-style: none;
+  		overflow: hidden;
+  		width: 100%;
+  		padding: 0;
+  		margin: 0;
+  		border-top: 1px solid #406D00;
+  		border-bottom: 1px solid #406D00;
+  		margin-bottom: 50px;
+  	}
+
+	.rslides li {
+  		-webkit-backface-visibility: hidden;
+  		position: absolute;
+  		display: none;
+  		width: 100%;
+  		left: 0;
+  		top: 0;
+  	}
+
+	.rslides li:first-child {
+  		position: relative;
+  		display: block;
+  		float: left;
+  	}
+
+	.rslides img {
+  		display: block;
+  		height: auto;
+  		float: left;
+  		width: 100%;
+  		border: 0;
+  	}
+
+	.slide_caption {
+		position: absolute;
+		display:block;
+		width:30%;
+		height:100%;
+		float:left;
+		background: rgba(0,0,0, 0);
+		color:#2D4C00;
+		text-align: left;
+		font-size: 1.5em;
+		padding-top:15px;
+	}
+	
+	.slide_caption h1 {
+		font-size: 1.3em;
+	}
+
+	.slide_caption p {
+		text-align: right;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -354,13 +378,19 @@ footer a {
                 box-shadow: 0 5px 10px #aaa;
     }
 
-
 	.header-container {
 		background-image: url(../img/background.png);
 	}
 	
 	aside {
 		color:black;
+	}
+	
+	.fb_button {
+		display:block;
+		position: fixed;
+		left:0;
+		top:45%;
 	}
 /* ============
     WIDE: Menu
@@ -398,7 +428,7 @@ footer a {
     	padding-top:10px;
     	padding-right:0;
       	float: right;
-        width:70%;
+        width:75%;
 
     }
 
@@ -406,7 +436,7 @@ footer a {
 		float:right;	
         width: auto;
         height: auto;
-        min-width: 14%;
+        min-width: 11%;
         margin:0;
         padding-top:8px;
         padding-bottom:8px;
@@ -418,13 +448,13 @@ footer a {
 
     .main article {
         float: left;
-        width: 57%;
+        width: 60%;
     }
 
     .main aside {
     	color:#000000;
         float: right;
-        width: 28%;
+        width: 25%;
     }
 }
 
