@@ -56,6 +56,12 @@ textarea {
     padding: 0.2em 0;
 }
 
+table {
+	border-spacing: 5px;
+	border-collapse: separate;
+	font-size:1em;
+    font-family: 'Courgette';
+}
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -271,6 +277,11 @@ footer a {
 .search {
 	margin-top:10px;
 }
+
+table a {
+	color:black;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -438,6 +449,7 @@ footer a {
         height: auto;
         min-width: 11%;
         margin:0;
+        border-right:none;
         padding-top:8px;
         padding-bottom:8px;
     }
