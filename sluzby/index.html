@@ -64,30 +64,85 @@
                         <h1>Služby</h1>
                     </header>
                     <section>
-                        <div class="service_wrapper">
-                        	<h3><a class="green" href="../sluzby/kvety/">Kvety</a></h3>
+                        <div class="service_wrapper" id="kvety_div">
+                        	<h3><a class="green" href="#kvety">Kvety</a></h3>
                         	<img src="../img/mini_kvety.jpg" />
                         </div>
-                         <div class="service_wrapper">
-                        	<h3><a class="green" href="../sluzby/darcekove-predmety/">Darčekové predmety</a></h3>
+                         <div class="service_wrapper" id="darceky_div">
+                        	<h3><a class="green" href="#darceky">Darčekové predmety</a></h3>
                         	<img src="../img/mini_present.jpg" />
                         </div>
-                         <div class="service_wrapper">
-                        	<h3><a class="green" href="../sluzby/dekoracie/">Dekorácie</a></h3>
+                         <div class="service_wrapper" id="dekoracie_div">
+                        	<h3><a class="green" href="#dekoracie">Dekorácie</a></h3>
                         	<img src="../img/mini_decoration.jpg" />
                         </div>
-                         <div class="service_wrapper">
-                        	<h3><a class="green" href="../sluzby/sezona/">Sezóna</a></h3>
+                         <div class="service_wrapper" id="sezona_div">
+                        	<h3><a class="green" href="#sezona">Sezóna</a></h3>
                         	<img src="../img/mini_sezona.jpg" />
                         </div>
-                        <div class="service_wrapper">
-                        	<h3><a class="green" href="../sluzby/zahrada/">Záhrada</a></h3>
+                        <div class="service_wrapper" id="zahrada_div">
+                        	<h3><a class="green" href="#zahrada">Záhrada</a></h3>
                         	<img src="../img/mini_zahrada.jpg" />
                         </div>
-                        <div class="service_wrapper">
+                        <div class="service_wrapper" id="rozvoz_div">
                         	<h3><a class="green" href="../rozvoz-kvetov/">Rozvoz kvetov</a></h3>
                         	<img src="../img/mini_rozvoz.jpg" />
                         </div>
+                    </section>
+                    <section id="kvety_panel">
+                    	<a name="kvety"></a>
+                    	<h4>Kvety</h4>
+                    	<ul>
+                    		<li>rezané kvety</li>
+                    		<li>črepníkové kvety</li>
+                    		<li>umelé kvety</li>
+                    		<li>gratulačné kytice</li>
+                    		<li>svadobné kytice</li>
+                    		<li>smútočné kytice</li>
+                    		<li>vence</li>
+                    	</ul>
+                    </section>
+                    <section id="darceky_panel">
+                    	<a name="darceky"></a>
+                    	<h4>Darčekové predmety</h4>
+                    	<ul>
+                    		<li>narodeninové koše</li>
+                    		<li>bonboniery</li>
+                    		<li>sviečky</li>
+                    		<li>pohľadnice</li>
+                    		<li>iné</li>
+                    	</ul>
+                    </section>
+                    <section id="dekoracie_panel">
+                    	<a name "dekoracie"></a>
+                    	<h4>Dekorácie</h4>
+                    	<ul>
+                    		<li>dekoračné predmety</li>
+                    		<li>zdobenie ikebán, váz</li>
+                    		<li>svadobná výzdoba</li>
+                    		<li>iné</li>
+                    	</ul>
+                    </section>
+                    <section id="sezona_panel">
+                    	<a name "sezona"></a>
+                    	<h4>Sezóna</h4>
+                    	<ul>
+                    		<li>sezónne kvety</li>
+                    		<li>vianoce</li>
+                    		<li>halloween</li>
+                    		<li>veľká noc</li>
+                    	</ul>
+                    </section>
+                    <section id="zahrada_panel">
+                    	<a name "zahrada"></a>
+                    	<h4>Záhrada</h4>
+                    	<ul>
+                    		<li>letničky</li>
+                    		<li>záhradné stromčeky</li>
+                    		<li>bonsaje</li>
+                    		<li>substráty</li>
+                    		<li>príslušenstvo</li>
+                    	</ul>                    
                     </section>
                 </article>
 
@@ -110,6 +165,54 @@
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
 
+        <script> 
+			$(document).ready(function(){
+  			$("#kvety_div").click(function(){
+    		$("#kvety_panel").slideDown("slow");
+    		$("#darceky_panel").slideUp("fast");
+    		$("#dekoracie_panel").slideUp("fast");
+    		$("#sezona_panel").slideUp("fast");
+    		$("#zahrada_panel").slideUp("fast");
+    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  				});
+  			$("#darceky_div").click(function(){
+    		$("#darceky_panel").slideDown("slow");
+    		$("#kvety_panel").slideUp("fast");
+    		$("#dekoracie_panel").slideUp("fast");
+    		$("#sezona_panel").slideUp("fast");
+    		$("#zahrada_panel").slideUp("fast");
+    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  				});
+  			$("#dekoracie_div").click(function(){
+    		$("#dekoracie_panel").slideDown("slow");
+    		$("#kvety_panel").slideUp("fast");
+    		$("#darceky_panel").slideUp("fast");
+    		$("#sezona_panel").slideUp("fast");
+    		$("#zahrada_panel").slideUp("fast");
+    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  				});
+  			$("#sezona_div").click(function(){
+    		$("#sezona_panel").slideDown("slow");
+    		$("#kvety_panel").slideUp("fast");
+    		$("#darceky_panel").slideUp("fast");
+    		$("#dekoracie_panel").slideUp("fast");
+    		$("#zahrada_panel").slideUp("fast");
+    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  				});
+  			$("#zahrada_div").click(function(){
+    		$("#zahrada_panel").slideDown("slow");
+    		$("#kvety_panel").slideUp("fast");
+    		$("#darceky_panel").slideUp("fast");
+    		$("#dekoracie_panel").slideUp("fast");
+    		$("#sezona_panel").slideUp("fast");
+    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  				});
+  			$("#rozvoz_div").click(function(){
+    		window.location.href = "../rozvoz-kvetov/";
+  				});
+			});
+			
+			</script>
         
         <script src="js/main.js"></script>
 

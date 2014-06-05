@@ -304,6 +304,21 @@ table a {
 	border-bottom: 1px dotted #537C19;
 }
 
+	#kvety_panel {
+    	display: none;
+    }
+    #darceky_panel {
+    	display: none;
+    }
+    #dekoracie_panel {
+    	display: none;
+    }
+    #sezona_panel {
+    	display: none;
+    }
+    #zahrada_panel {
+    	display: none;
+    }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -405,6 +420,9 @@ table a {
     	margin: 5px;
     	text-align: center;
     }
+    
+    
+    
 }
 
 @media only screen and (min-width: 768px) {
