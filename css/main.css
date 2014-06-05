@@ -214,12 +214,6 @@ section {
 	overflow: auto;
 }
 
-section img {
-	float:left;
-	padding-left:25px;
-	padding-right:25px;
-}
-
 p {
 	font-family: "Courgette";
 	font-size: 1.1em;
@@ -287,6 +281,28 @@ table a {
 	color:black;
 }
 
+.service_wrapper {
+    	float: none;
+    	width: 95%;
+    	height: auto;
+    	border: 1px dotted #2D4C00;
+    	margin: 5px;
+    	padding-bottom:5px;
+    	text-align: center;
+    	
+    }
+
+.service_wrapper img {
+	max-width:90%;
+	width:auto;
+	max-height:90%;
+	height:auto;
+}
+
+.service_wrapper a {
+	text-decoration: none;
+	border-bottom: 1px dotted #537C19;
+}
 
 /* ==========================================================================
    Media Queries
@@ -380,6 +396,15 @@ table a {
 	.slide_caption p {
 		text-align: right;
 	}
+	
+	
+	.service_wrapper {
+    	float: left;
+    	width: 45%;
+    	border: 1px dotted #2D4C00;
+    	margin: 5px;
+    	text-align: center;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -474,6 +499,16 @@ table a {
         float: right;
         width: 25%;
     }
+    
+    .service_wrapper {
+    	float: left;
+    	width: 30%;
+    	margin-left: 10px;
+    	
+    	margin-bottom: 30px;
+    	text-align: center;
+    }
+    
 }
 
 @media only screen and (min-width: 1140px) {
@@ -493,6 +528,7 @@ table a {
    ========================================================================== */
 #full_wide {
 	width: 100%;
+	margin: 0 auto;
 }
 
 .ir {
