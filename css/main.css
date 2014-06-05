@@ -251,9 +251,14 @@ a.button_link:hover {
 	color:white;
 }
 
+a.active {
+	background: #537C19;
+}
+
 footer h4{
 	color:white;
-}
+	text-shadow: none;
+	}
 
 footer a {
 	color:white;
@@ -281,6 +286,7 @@ footer a {
 table a {
 	color:black;
 }
+
 
 /* ==========================================================================
    Media Queries
@@ -485,6 +491,9 @@ table a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+#full_wide {
+	width: 100%;
+}
 
 .ir {
     background-color: transparent;
