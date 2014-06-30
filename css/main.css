@@ -304,6 +304,10 @@ table a {
 	border-bottom: 1px dotted #537C19;
 }
 
+.uplink {
+	font-family: 'Courgette';
+}
+
 	#kvety_panel {
     	display: none;
     }
