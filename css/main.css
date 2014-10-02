@@ -271,6 +271,7 @@ footer a {
 .header_contact {
 	color:white;
 	margin-top:10px;
+	font-family: 'Courgette';
 }
 
 .search {
@@ -333,6 +334,30 @@ table a {
     #map3 {
         display: block;        
       }
+    .overlay {
+    	background:transparent; 
+   		position:relative; 
+   		width:99%;
+   		height:300px; /* your iframe height */
+   		top:300px;  /* your iframe height */
+   		margin-top:-300px;  /* your iframe height */
+    }
+   .left-align {
+   	text-align: left;
+   } 
+   .paragraph-padding {
+   	padding-left:35px;
+   	padding-right: 35px;
+   }
+   
+   #map1_div,#map2_div,#map3_div {
+   	height: 450px;
+   	background-image: url(../img/map_corner.png);
+   	background-position-x: 100%;
+   	background-position-y: 100%;
+   	background-repeat: no-repeat;
+   }
+   	
 /* ==========================================================================
    Media Queries
    ========================================================================== */
