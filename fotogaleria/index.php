@@ -81,21 +81,7 @@
 					</ul>
 					<?php
 						echo "debil";
-						if ($handle = opendir('../img')) {
-    						echo "Directory handle: $handle\n";
-    						echo "Entries:\n";
-   					
-    						while (false !== ($entry = readdir($handle))) {
-        						echo "$entry\n";
-    						}
-
-    					
-    						while ($entry = readdir($handle)) {
-        						echo "$entry\n";
-    						}
-
-    						closedir($handle);
-						}
+						
 					?>
                 </article>
 
