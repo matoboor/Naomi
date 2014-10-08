@@ -488,7 +488,10 @@ table a {
     	text-align: center;
     }
     
-    
+    .thumb {
+    	width:50%;
+    	height:50%;
+    }
     
 }
 

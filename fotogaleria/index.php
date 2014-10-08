@@ -80,7 +80,26 @@
   						</li>
 					</ul>
 					<?php
-						echo "debil";
+						if($_GET["g"])
+						{
+							$g=$_GET["g"];
+							$dir="Fotky/$g";
+							if ($handle = opendir($dir)) {    										
+    							while (false !== ($entry = readdir($handle))) {
+    								if($entry!="." && $entry!=".." && is_dir($entry)==false)
+									{
+										echo "<img class=\"thumb\" src=\"$dir/$entry\" />";
+									}
+        						
+    						}
+
+
+    						closedir($handle);
+							}
+						}
+						
+							
+						
 						
 					?>
                 </article>
@@ -89,16 +108,16 @@
                     <h3>Galérie:</h3>
                     <ul class="aside_menu">
                                                                                           
-                        <li><a class="aside_menu" href=""><img src="../img/aranzmany.png" />Aranžmány</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/kytice.png" />Kytice</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/gratulacne.png" />Gratulačné</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/svadobne.png" />Svadobné</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/smutocne.png" />Smútočné</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/letnicky.png" />Letničky</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/halloween.png" />Halloween</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/vianoce.png" />Vianoce</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/velkanoc.png" />Veľká noc</a></li>
-                        <li><a class="aside_menu" href=""><img src="../img/ostatne.png" />Ostatné...</a></li>
+                        <li><a class="aside_menu" href="?g=Aranzmany"><img src="../img/aranzmany.png" />Aranžmány</a></li>
+                        <li><a class="aside_menu" href="?g=Kytice"><img src="../img/kytice.png" />Kytice</a></li>
+                        <li><a class="aside_menu" href="?g=Gratulacne"><img src="../img/gratulacne.png" />Gratulačné</a></li>
+                        <li><a class="aside_menu" href="?g=Svadobne"><img src="../img/svadobne.png" />Svadobné</a></li>
+                        <li><a class="aside_menu" href="?g=Smutocne"><img src="../img/smutocne.png" />Smútočné</a></li>
+                        <li><a class="aside_menu" href="?g=Letnicky"><img src="../img/letnicky.png" />Letničky</a></li>
+                        <li><a class="aside_menu" href="?g=Halloween"><img src="../img/halloween.png" />Halloween</a></li>
+                        <li><a class="aside_menu" href="?g=Vianoce"><img src="../img/vianoce.png" />Vianoce</a></li>
+                        <li><a class="aside_menu" href="?g=Velkanoc"><img src="../img/velkanoc.png" />Veľká noc</a></li>
+                        <li><a class="aside_menu" href="?g=Ine"><img src="../img/ostatne.png" />Ostatné...</a></li>
                        
                     </ul>
                 </aside>
