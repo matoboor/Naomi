@@ -14,19 +14,27 @@
 
         <link rel="stylesheet" href="../css/normalize.min.css">
         <link rel="stylesheet" href="../css/main.css">
-
+		<link rel="stylesheet" href="../css/photoswipe.css">
         <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="../js/responsiveslides.min.js"></script>
 		
 		<script src="../js/date.1.js"></script>
+		
+		<script type="text/javascript" src="../js/simple-inheritance.min.js"></script>
+		<script type="text/javascript" src="../js/code-photoswipe-1.0.11.min.js"></script>
 		
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <script type="text/javascript">
+        	document.addEventListener('DOMContentLoaded', function(){
+			Code.photoSwipe('a', '#Gallery');
+			}, false);
+        </script>
+        
 		<div class="fb_button"><a href="#"><img src="../img/facebook_vertical.png" /></a></div>
         <div class="header-container">
             <header class="wrapper clearfix">
@@ -39,10 +47,10 @@
                     <ul>
                     	<!--reverse -->
                                                                                            
-                        <li><a href="kontakt/">Kontakt</a></li>
+                        <li><a href="../kontakt/">Kontakt</a></li>
                         <li><a href="" class="active">Fotogaléria</a></li>
-                        <li><a href="rozvoz-kvetov/">Rozvoz kvetov</a></li>
-                        <li><a href="sluzby/">Služby</a></li>
+                        <li><a href="../rozvoz-kvetov/">Rozvoz kvetov</a></li>
+                        <li><a href="../sluzby/">Služby</a></li>
                         <li><a href="../" >O nás</a></li>
                        
                     </ul>
@@ -56,56 +64,81 @@
         	</div>
             <div class="main wrapper clearfix">												
                 <article>
-                    <ul class="rslides">
-  						<li>
-  							<img src="../img/1.jpg" alt="">
-  							<div class="slide_caption">
-  								<h1>Kvetinárstvo Naomi</h1>
-  								<p>
-  								prvotriedna kvalita 
-  								</p>
-  							</div>	
-  						</li>
-  						<li>
-  							<img src="../img/5.jpg" alt="">
-  							
-  						</li>
-  						<li>
-  							<img src="../img/3.jpg" alt="">
-  							
-  						</li>
-  						<li>
-  							<img src="../img/4.jpg" alt="">
-  														
-  						</li>
-					</ul>
+                	<div class="gallery-nav"> <a href="#Galerie" class="button_link">Galérie >></a></div>
+                  
+					<div id="Gallery">
 					<?php
-						if($_GET["g"])
-						{
-							$g=$_GET["g"];
-							$dir="Fotky/$g";
+					function Printfolder($g)
+							{$dir="Fotky/$g";
+							$c=0;
 							if ($handle = opendir($dir)) {    										
     							while (false !== ($entry = readdir($handle))) {
     								if($entry!="." && $entry!=".." && is_dir($entry)==false)
 									{
-										echo "<img class=\"thumb\" src=\"$dir/$entry\" />";
+										echo "<div class=\"gallery-item\"><a href=\"$dir/$entry\"> <div class=\"thumb_div\"> <img class=\"thumb\" src=\"$dir/$entry\" /></div></a></div>";
 									}
-        						
+        							$c++;
     						}
-
-
-    						closedir($handle);
+							if($c % 2 ==! 0)
+							{
+								echo "<div class=\"thumb_div\"></div>";
 							}
+    						closedir($handle);
+							}}
+					
+					
+						if($_GET["g"])
+						{
+							$g=$_GET["g"];
+							switch ($g) {
+								case "Aranzmany":
+									echo "<h1>Aranžmány</h1>";
+									break;
+								case "Kytice":
+									echo "<h1>Kytice</h1>";
+									break;
+								case "Gratulacne":
+									echo "<h1>Gratulačné</h1>";
+									break;
+								case "Svadobne":
+									echo "<h1>Svadobné</h1>";
+									break;
+								case "Smutocne":
+									echo "<h1>Smútočné</h1>";
+									break;
+								case "Letnicky":
+									echo "<h1>Letničky</h1>";
+									break;
+								case "Halloween":
+									echo "<h1>Halloween</h1>";
+									break;
+								case "Vianoce":
+									echo "<h1>Vianoce</h1>";
+									break;
+								case "Velkanoc":
+									echo "<h1>Veľká noc</h1>";
+									break;
+								case "Ine":
+									echo "<h1>Ostatné</h1>";
+									break;
+							}
+							Printfolder($g);
+						}
+						else {
+							Printfolder("Ine");
 						}
 						
 							
 						
 						
 					?>
+					</div>
                 </article>
 
                 <aside>
+                	
                     <h3>Galérie:</h3>
+                    <a name="Galerie"></a>
                     <ul class="aside_menu">
                                                                                           
                         <li><a class="aside_menu" href="?g=Aranzmany"><img src="../img/aranzmany.png" />Aranžmány</a></li>
@@ -120,6 +153,7 @@
                         <li><a class="aside_menu" href="?g=Ine"><img src="../img/ostatne.png" />Ostatné...</a></li>
                        
                     </ul>
+                   
                 </aside>
 
             </div> <!-- #main -->
@@ -138,11 +172,7 @@
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
-		<script>
-  			$(function() {
-    			$(".rslides").responsiveSlides({auto:true, speed: 2000, timeout: 6000});
-  			});
-		</script>
+
         
         <script src="js/main.js"></script>
 
