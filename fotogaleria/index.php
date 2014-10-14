@@ -118,13 +118,15 @@
 								case "Velkanoc":
 									echo "<h1>Veľká noc</h1>";
 									break;
-								case "Ine":
-									echo "<h1>Ostatné</h1>";
-									break;
-							}
+								case "Zahrada":
+									echo "<h1>Záhrada</h1>";
+									break;	
+								
+								}
 							Printfolder($g);
 						}
 						else {
+							echo "<h1>Vyberte si galériu ></h1>";							
 							Printfolder("Ine");
 						}
 						
@@ -150,7 +152,7 @@
                         <li><a class="aside_menu" href="?g=Halloween"><img src="../img/halloween.png" />Halloween</a></li>
                         <li><a class="aside_menu" href="?g=Vianoce"><img src="../img/vianoce.png" />Vianoce</a></li>
                         <li><a class="aside_menu" href="?g=Velkanoc"><img src="../img/velkanoc.png" />Veľká noc</a></li>
-                        <li><a class="aside_menu" href="?g=Ine"><img src="../img/ostatne.png" />Ostatné...</a></li>
+                        <li><a class="aside_menu" href="?g=Zahrada"><img src="../img/zahrada.png" />Záhrada</a></li>
                        
                     </ul>
                    
