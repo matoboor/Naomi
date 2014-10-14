@@ -209,6 +209,10 @@ h1,h2,h3,h4,h5,h6 {
 	float:right;
 }
 
+.float_left {
+	float: left;
+}
+
 section {
 	border-bottom: 1px solid #2D4C00;
 	overflow: auto;
@@ -217,6 +221,10 @@ section {
 p {
 	font-family: "Courgette";
 	font-size: 1.1em;
+}
+
+ul li {
+	font-family: "Courgette";
 }
 
 a.button_link {
@@ -576,12 +584,6 @@ table a {
     	float:left
     }
 
-	.search {
-		text-align:right;
-		margin-top: 20px;
-		color: white;
-	}
-	
 	.header_contact {
 		float:right;
 		width:70%;
