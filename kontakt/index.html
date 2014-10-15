@@ -32,7 +32,7 @@
 		<div class="fb_button"><a href="#"><img src="../img/facebook_vertical.png" /></a></div>
         <div class="header-container">
             <header class="wrapper clearfix">
-            	<a name="up"></a>
+            	<a name="up" id="up"></a>
             	<a href="../">
                 	<img src="../img/logo.png" class="logo"/>
                 </a>
@@ -162,14 +162,14 @@
                     	<p>oproti Prioru</p>
                     	<div class="overlay" onClick="style.pointerEvents='none'"></div>
                     	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2623.133840618494!2d18.038886299999998!3d48.893786399999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714a18f3384f545%3A0x597862fd613e89f4!2sVajansk%C3%A9ho+147%2F1!5e0!3m2!1scs!2sus!4v1404138659286" width="99%" height="300" frameborder="0" style="border:0"> </iframe>
-                    	<a class="green uplink" href="#up">Hore</a>
+                    	<a class="green uplink smooth_scroll" href="#up" targetID="up">Hore</a>
                     </section>
                     <section id="map2">
                     	<a name="Stop-Shop"></a>
                     	<h4>Stop Shop</h4>
                     	<div class="overlay" onClick="style.pointerEvents='none'"></div>
                     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5863101711925!2d18.021677300409507!3d48.86609853713101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69c28006290a61d5!2zQmlnIEJveCBUcmVuxI3DrW4!5e0!3m2!1scs!2sus!4v1404141528660" width="99%" height="300" frameborder="0" style="border:0"> </iframe>
-                    	<a class="green uplink" href="#up">Hore</a>
+                    	<a class="green uplink smooth_scroll" href="#up" targetID="up">Hore</a>
                     </section>
                     <section id="map3">
                     	<a name="Laugaricio"></a>
@@ -177,7 +177,7 @@
                     	<p>Darčekové predmety</p>
                     	<div class="overlay" onClick="style.pointerEvents='none'"></div>
                     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6392230071815!2d18.020273082290934!3d48.865089659714734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33255b914e4aed1a!2sObchodn%C3%A9+centrum+Laugaricio!5e0!3m2!1scs!2sus!4v1404141234036" width="99%" height="300" frameborder="0" style="border:0"> </iframe>
-                    	<a class="green uplink" href="#up">Hore</a>
+                    	<a class="green uplink smooth_scroll" href="#up" targetID="up">Hore</a>
                     </section>                                    
                 </article>
 
@@ -195,7 +195,19 @@
                 <!-- ******************************************************* -->
             </footer>
         </div>
-
+		
+		<script type="text/javascript">
+	    	$(document).ready(function () {                       
+                jQuery('.smooth_scroll').click(function (event) {
+                    event.stopPropagation();                
+                    var idTo = jQuery(this).attr('targetID');                
+                    var Position = jQuery('[id="' + idTo + '"]').offset().top;
+                    jQuery('html, body').animate({ scrollTop: Position }, 'slow');
+                    return false;
+                });
+			});
+	    </script>
+		
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>

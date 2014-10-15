@@ -18,6 +18,8 @@
         <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
+        <script src="../js/jquery.validarium.js"></script>
 		<!-- <script src="js/responsiveslides.min.js"></script> -->
 		
 		<script src="../js/date.1.js"></script>
@@ -33,7 +35,7 @@
             	<a href="../">
                 	<img src="../img/logo.png" class="logo"/>
                 </a>
-                </br>
+                <br />
                 <div class="header_contact"><img src="../img/phone-icon.png"/>+421-915-443-740</div>
                 <nav>
                     <ul>
@@ -68,30 +70,34 @@
                         	Objednávať môžete telefonicky, alebo pomocou formulára nižšie.
                         </p>
                         <hr />
-                        <form>
+                        <form id="objednaj" action="objednaj.php" method="post">
                         	<h4>Informácie o Vás</h4>
                         	<table>
                         		<tr>
                         			<td>Meno: </td>
-                        			<td><input type="text" name"firstname" /></td>
+                        			<td><input type="text" name="firstname" placeholder="Meno" data-rules-required="true" data-rules-required-message="Zadajte svoje meno"/><span class="red">*</span></td>
                         			
                         		</tr>
                         		<tr>
                         			<td>Priezvisko: </td>
-                        			<td><input type="text" name"lastname" /></td>
+                        			<td><input type="text" name="lastname" placeholder="Priezvisko" data-rules-required="true" data-rules-required-message="Zadajte svoje priezvisko"/><span class="red">*</span></td>
                         		</tr>
                         		<tr>
                         			<td>Telefón:</td>
-                        			<td><input type="text" name="phone" /></td>
+                        			<td><input type="tel" name="phone" placeholder="Telefón"  data-rules-required="true" data-rules-minlength="10" data-rules-required-message="Zadajte svoje telefónne číslo" data-rules-minlength-message="+421 xxx xxx xxx" /><span class="red">*</span></td>
                         			
                         		</tr>
                         		<tr>
+                        			<td>Adresa (fakturačná): </td>
+                        			<td><textarea name="address"  rows="5" cols="22" data-rules-required="true" data-rules-required-message="Zadajte svoju adresu" ></textarea ><span class="red">*</span></td>
+                        		</tr>
+                        		<tr>
                         			<td>E-mail: </td>
-                        			<td><input type="email" name="mail" /></td>
+                        			<td><input type="email" name="mail" placeholder="vas@email.sk" data-rules-required="true" data-rules-email="true" data-rules-required-message="Zadajte svoj email" data-rules-email-message="vas@email.sk" /><span class="red">*</span></td>
                         		</tr>
                         		<tr>
                         			<td>Vaša objednávka:</td>
-                        			<td colspan="3"><textarea name="order" rows="5" cols="30"></textarea></td>
+                        			<td colspan="3"><textarea name="order" rows="5" cols="22" data-rules-required="true" data-rules-required-message="Zadajte svoju objednávku"></textarea ><span class="red" >*</span></td>
                         		</tr>
                         	</table>
                         	<hr />
@@ -99,38 +105,40 @@
                         	<table>
                         		<tr>
                         			<td>Meno: </td>
-                        			<td><input type="text" name"firstname2" /></td>
+                        			<td><input type="text" name="firstname2" placeholder="Meno" data-rules-required="true" data-rules-required-message="Zadajte meno adresáta"/><span class="red">*</span></td>
                         			
                         		</tr>
                         		<tr>
                         			<td>Priezvisko: </td>
-                        			<td><input type="text" name"lastname2" /></td>
+                        			<td><input type="text" name="lastname2" placeholder="Priezvisko" data-rules-required="true" data-rules-required-message="Zadajte priezvisko adresáta"/><span class="red">*</span></td>
                         		</tr>
                         		<tr>
                         			<td>Telefón:</td>
-                        			<td><input type="text" name="phone2" /></td>
+                        			<td><input type="text" name="phone2" placeholder="Telefón" data-rules-required="true" data-rules-minlength="10" data-rules-required-message="Zadajte telefónne číslo adresáta" data-rules-minlength-message="+421 xxx xxx xxx"/><span class="red">*</span></td>
                         			
                         		</tr>
                         		<tr>
                         			<td>Adresa doručenia: </td>
-                        			<td><textarea name="address2" rows="5" cols="30"></textarea></td>
+                        			<td><textarea name="address2" rows="5" cols="22" data-rules-required="true" data-rules-required-message="Zadajte adresu adresáta"></textarea><span class="red">*</span></td>
                         		</tr>
                         		<tr>
                         			<td>Dátum doručenia: </td>
-                        			<td><input type="date" name="date2" /></td>
+                        			<td><input type="date" name="date2" placeholder="Vyberte dátum" data-rules-required="true" data-rules-required-message="Zadajte dátum doručenia"/><span class="red">*</span></td>
                         		</tr>
                         		<tr>
                         			<td>Čas doručenia: </td>
                         			<td>
-                        				<select name="time2">
+                        				<select name="time2" data-rules-required="true" data-rules-required-message="Vyberte čas doručenia">
+                        					<option value=""></option>
                         					<option value="AM">Pred poludním</option>
                         					<option value="PM">Po poludní</option>
                         				</select>
+                        				<span class="red">*</span>
                         			</td>
                         		</tr>
                         		<tr>
                         			<td>Venovanie na kartičke</td>
-                        			<td><textarea name="address" rows="3" cols="30"></textarea></td>
+                        			<td><textarea name="wish" rows="3" cols="22"></textarea></td>
                         		</tr>
                         	</table>
                         	<hr />
@@ -178,7 +186,11 @@
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
-        
+        <script type="text/javascript">
+		
+    	$('form#objednaj').validarium();
+		
+		</script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -38,6 +38,7 @@
 		<div class="fb_button"><a href="#"><img src="../img/facebook_vertical.png" /></a></div>
         <div class="header-container">
             <header class="wrapper clearfix">
+            	<a id="up" name="up"></a>
             	<a href="../">
                 	<img src="../img/logo.png" class="logo"/>
                 </a>
@@ -83,6 +84,7 @@
 							{
 								echo "<div class=\"thumb_div\"></div>";
 							}
+							
     						closedir($handle);
 							}}
 					
@@ -129,12 +131,10 @@
 							echo "<h1>Vyberte si galériu ></h1>";							
 							Printfolder("Ine");
 						}
-						
-							
-						
-						
+																									
 					?>
 					</div>
+					<a class="smooth_scroll green uplink" href="#up" targetID="up">Hore </a>
                 </article>
 
                 <aside>
@@ -169,14 +169,24 @@
                 <span id="kasman"><a href="http://www.kasman.sk/javascript"></a></span>
                 <!-- ******************************************************* -->
             </footer>
-        </div>
-
+        </div>	
+	   <script type="text/javascript">
+	    	$(document).ready(function () {                       
+                jQuery('.smooth_scroll').click(function (event) {
+                    event.stopPropagation();                
+                    var idTo = jQuery(this).attr('targetID');                
+                    var Position = jQuery('[id="' + idTo + '"]').offset().top;
+                    jQuery('html, body').animate({ scrollTop: Position }, 'slow');
+                    return false;
+                });
+			});
+	    </script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
 
         
-        <script src="js/main.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
