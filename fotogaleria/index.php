@@ -35,7 +35,7 @@
 			}, false);
         </script>
         
-		<div class="fb_button"><a href="#"><img src="../img/facebook_vertical.png" /></a></div>
+		<div class="fb_button"><a href="http://www.facebook.com/Naomi.Kvety" target="_blank"><img src="../img/facebook_vertical.png" /></a></div>
         <div class="header-container">
             <header class="wrapper clearfix">
             	<a id="up" name="up"></a>

@@ -83,7 +83,7 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #81ae40;  
+    border-bottom: 15px solid #81ae40;  
 }
 
 .footer-container {
@@ -197,7 +197,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blue {
-	color:#3333FF;
+	color:#042485;
 	font-weight: bold;
 }
 
