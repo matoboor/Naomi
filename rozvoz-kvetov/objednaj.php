@@ -19,6 +19,7 @@
 	$receiver = "$name2 $surname2";
 	date_default_timezone_set('Europe/Bratislava');
 	$timestamp = date('d/m/Y h:i:s');
+	//mail message
 	$message = "
 				<html>
 				<head>
@@ -81,26 +82,58 @@
 				</body>
 				</html>
 				";		
+	
+	function SaveRecord()
+	{
+		include '../../include/cred.php';
+		$connection = mysqli_connect('localhost', $username, $password, $dbname);
+		if (mysqli_connect_errno())
+		{
+			return false;
+		}
+		$name1=mysqli_real_escape_string($connection, $GLOBALS['name1']);
+		$surname1=mysqli_real_escape_string($connection, $GLOBALS['surname1']);
+		$phone1=mysqli_real_escape_string($connection, $GLOBALS['phone1']);
+		$address1=mysqli_real_escape_string($connection, $GLOBALS['address1']);
+		$email1=mysqli_real_escape_string($connection, $GLOBALS['email1']);
+		$order=mysqli_real_escape_string($connection, $GLOBALS['order']);
+		$name2=mysqli_real_escape_string($connection, $GLOBALS['name2']);
+		$surname2=mysqli_real_escape_string($connection, $GLOBALS['surname2']);
+		$phone2=mysqli_real_escape_string($connection, $GLOBALS['phone2']);
+		$address2=mysqli_real_escape_string($connection, $GLOBALS['address2']);
+		$deliverydate=mysqli_real_escape_string($connection, $GLOBALS['date']);
+		$deliverytime=mysqli_real_escape_string($connection, $GLOBALS['time']);
+		$wish=mysqli_real_escape_string($connection, $GLOBALS['wish']);
+		$date=mysqli_real_escape_string($connection, date("Y-m-d H:i:s"));
+		
+		$sql1 = "INSERT INTO `orders`(`name1`, `surname1`, `phone1`, `address1`, `email1`, `order`, `name2`, `surname2`, `phone2`, `address2`, `deliverydate`, `deliverytime`, `wish`, `time`) 
+		VALUES ('$name1','$surname1','$phone1','$address1','$email1','$order','$name2','$surname2','$phone2','$address2','$deliverydate','$deliverytime' ,'$wish','$date')";
+		if(!mysqli_query($connection,$sql1))
+		{
+		return false;
+		}
+		else 
+		{
+		return true;
+		}
+	}
+	
+				
+	//shop mail values
 	$to = "koxo_17@azet.sk";
 	$subject = "Systém prijal novú objednávku";
 	$msg = wordwrap($message,70, "\r\n");
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 	$headers .= 'From: Naomi - Kvety <naomi@kvety-naomi.sk>' . "\r\n";
-	if(mail($to,$subject,$msg,$headers))
+	if(mail($to,$subject,$msg,$headers) && mail($email1, "Vaša objednávka bola prijatá", $msg, $headers) && SaveRecord())
 	{
-		echo "Objednavka odoslana";
-		if(mail($email1, "Vaša objednávka bola prijatá", $msg, $headers))
-			{
-				echo "Kopia odoslana";
-				header ( "Location: Ok.php?id=$timestamp");
-			}
-			else {
-				echo "chyba";
-			}
+				
+				// db connect, save record, disconnect, maybe create function whitch returns bool and put it in the if above.		
+				header ( "Location: Ok.php?id=$timestamp");			
 	}
 	else {
-		echo "chyba";
+		echo "chyba ";
 		}
 	
 	

@@ -66,7 +66,8 @@
                         	<b>
                         	<?php 
                         	$id = $_GET["id"];
-                        	echo "$id"; ?></b>.
+                        	echo "$id";                        	                      	
+                        	?></b>.
                         	Kópia objednávky bola odoslaná do Vašej e-mailovej schránky.
                         </p>
                         <p>
