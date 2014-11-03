@@ -67,8 +67,8 @@
                     </header>
                     <section>
                         <div class="service_wrapper" id="map1_div">
-                        	<h3><a class="green" href="#Vajanskeho">Vajanského 1</a></h3>
-                        	<a href="#map1">               		
+                        	<h3><a class="green smooth_scroll" href="#Vajanskeho" targetID="map1">Vajanského 1</a></h3>
+                        	<a href="#map1" class="smooth_scroll" targetID="map1">               		
                         		<p class="black left-align paragraph-padding">
                         						
                         						 Vajanského 147/1 <br />
@@ -99,8 +99,8 @@
                         	</a>
                         </div>
                          <div class="service_wrapper" id="map2_div">
-                        	<h3><a class="green" href="#Stop-Shop">Stop Shop</a></h3>
-                        	<a href="#map2">               		
+                        	<h3><a class="green smooth_scroll" href="#Stop-Shop" targetID="map2">Stop Shop</a></h3>
+                        	<a href="#map2" class="smooth_scroll" targetID="map2">               		
                         		<p class="black left-align paragraph-padding">
                         						
                         						 Stop Shop<br />
@@ -124,8 +124,8 @@
                         </div>
                         
                         <div class="service_wrapper" id="map3_div">
-                        	<h3><a class="green" href="#Laugaricio">OC Laugarício</a></h3>
-                        	<a href="#map3">               		
+                        	<h3><a class="green smooth_scroll" href="#Laugaricio" targetID="map3">OC Laugarício</a></h3>
+                        	<a href="#Laugaricio" class="smooth_scroll" targetID="map3">               		
                         		<p class="black left-align paragraph-padding">
                         						
                         						 Obchodné centrum Laugaricio <br />
@@ -211,35 +211,7 @@
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
-
-        <script> 
-			$(document).ready(function(){
-			$("#map1").slideUp("fast");
-			$("#map2").slideUp("fast");
-			$("#map3").slideUp("fast");	
-				
-  			$("#map1_div").click(function(){
-    		$("#map1").slideDown("slow");
-    		$("#map2").slideUp("fast");
-    		$("#map3").slideUp("fast");
-    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  				});
-  			$("#map2_div").click(function(){
-    		$("#map2").slideDown("slow");
-    		$("#map3").slideUp("fast");
-    		$("#map1").slideUp("fast");
-    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  				});
-  			$("#map3_div").click(function(){
-    		$("#map3").slideDown("slow");
-    		$("#map1").slideUp("fast");
-    		$("#map2").slideUp("fast");
-    		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  				});  			
-			});
-			
-			</script>
-        
+                  
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -361,8 +361,7 @@ table a {
    #map1_div,#map2_div,#map3_div {
    	height: 450px;
    	background-image: url(../img/map_corner.png);
-   	background-position-x: 100%;
-   	background-position-y: 100%;
+   	background-position: 100% 100%;
    	background-repeat: no-repeat;
    }
 	ul.aside_menu {
