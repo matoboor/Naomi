@@ -14,12 +14,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #D6C4A9;
     text-shadow: none;
 }
 
 ::selection {
-    background: #81AE40;
+    background: #D6C4A9;
     text-shadow: none;
 }
 
@@ -27,7 +27,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #806B4F;
     margin: 1em 0;
     padding: 0;
 }
@@ -69,6 +69,7 @@ table {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background: url('/img/background.jpg');
 }
 
 	
@@ -83,7 +84,7 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 15px solid #81ae40;  
+    border-bottom: 15px solid #57452C;  
 }
 
 .footer-container {
@@ -91,13 +92,13 @@ body {
 }
 
 .header-container, .footer-container {
-	background: #406D00;
+	background-color:#806B4F;
 }
 
 .nameday-container {
-	background: #D8D8FF;
+	background-color:rgba(143, 124, 97, 0.3);
 	margin-top:15px;
-	color:#406D00;
+	color:#42403F;
 	text-align: center;
 	font-family: 'Courgette';
 }
@@ -129,19 +130,18 @@ nav a {
     font-size:1.2em;
     font-family: 'Courgette';
     color: white;
-    background: #406d00;
-    border-left: 1px solid #537C19;
-    border-right: 1px solid #537C19;
+    background: #705C3F;
+    border-left: 1px solid #939392;
+    border-right: 1px solid #939392;
 }
 
-nav a:hover,
 nav a:visited {
-    color: white;
+    
 }
 
 nav a:hover {
-    background: #537C19;
-    color: white;
+    background: #57452C;
+
 }
 
 /* ==============
@@ -149,7 +149,11 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 15px 0;
+    padding: 10px 15px;
+    background-color:white;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .main article h1 {
@@ -164,6 +168,7 @@ nav a:hover {
 .footer-container footer {
     color: white;
     padding: 20px 0;
+    margin-top: 15px;
 }
 
 
@@ -180,7 +185,7 @@ nav a:hover {
    ========================================================================== */
 
 h1,h2,h3,h4,h5,h6 {
-	color: #2D4C00;
+	color: #57452C;
 	font-family: 'Courgette';
 	text-shadow: 1px 1px #CCCCCC;
 }
@@ -192,7 +197,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .green {
-	color:#2D4C00;
+	color:#57452C;
 	font-weight: bold;
 }
 
@@ -214,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 section {
-	border-bottom: 1px solid #2D4C00;
+	border-bottom: 1px solid #806B4F;
 	overflow: auto;
 }
 
@@ -236,9 +241,9 @@ a.button_link {
     font-weight: normal;
     font-size:.8em;
     font-family: 'Courgette';
-    color: #537C19;
+    color: #57452C;
     background: white;
-    border: 1px solid #537C19;
+    border: 1px solid #57452C;
     padding-left:5px;
     padding-right: 5px;
     padding-top:3px;
@@ -249,12 +254,13 @@ a.button_link {
 }
 
 a.button_link:hover {
-	background: #81AE40;
+	background: #806B4F;
 	color:white;
 }
 
 a.active {
-	background: #537C19;
+	background: #57452C;
+	color: white;
 }
 
 footer h4{
@@ -381,12 +387,12 @@ table a {
     font-size:1.2em;
     font-family: 'Courgette';
     color: white;
-    background: #406d00;
+    background: #705C3F;
     border-left: 1px solid #537C19;
     border-right: 1px solid #537C19;
 	}
    	a:hover.aside_menu {
-    background: #537C19;
+    background: #57452C;
     color: white;
 	}
 	a.aside_menu img {
@@ -446,6 +452,10 @@ table a {
         margin-right: 0;
     }
 
+
+	.nameday-container {
+		margin-bottom: 15px;
+	}
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -467,8 +477,8 @@ table a {
   		width: 100%;
   		padding: 0;
   		margin: 0;
-  		border-top: 1px solid #406D00;
-  		border-bottom: 1px solid #406D00;
+  		border-top: 1px solid #806B4F;
+  		border-bottom: 1px solid #806B4F;
   		margin-bottom: 50px;
   	}
 
@@ -502,7 +512,7 @@ table a {
 		height:100%;
 		float:left;
 		background: rgba(0,0,0, 0);
-		color:#2D4C00;
+		color:#57452C;
 		text-align: left;
 		font-size: 1.5em;
 		padding-top:15px;
@@ -618,6 +628,18 @@ table a {
         padding-top:8px;
         padding-bottom:8px;
     }
+    
+    nav ul li:last-child a {
+	-webkit-border-top-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+border-top-left-radius: 5px;
+}
+    nav ul li:first-child a {
+	-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+border-top-right-radius: 10px;
+}
+
 
 /* ============
     WIDE: Main
