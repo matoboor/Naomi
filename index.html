@@ -1,207 +1,194 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Naomi - O nás</title>
-        <meta name="description" content="Najväčšie kvetinárstvo v Trenčíne. Veľký výber, dobrá cena. Donáška kvetov.">
-        <meta name="keywords" content="naomi, kvety, kvetinarstvo, trencin, rozvoz, dekoracie, vyzdoba, kytice, darcek, sviatok" />
-        <meta name="author" content="Martin Boor" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="kvety, kvetinarstvo, trencin, rozvoz kvetov, naomi"/>
+	<meta name="description" content="Kvetinárstvo Naomi"/>
+	<meta name="ROBOTS" content="INDEX, FOLLOW"/>
+	<title>Kvetinárstvo Naomi</title>
+	
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/date.1.js"></script>
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/responsiveslides.min.js"></script>
-		
-		<script src="js/date.1.js"></script>
-		
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-		<div class="fb_button"><a href="http://www.facebook.com/Naomi.Kvety" target="_blank"><img src="img/facebook_vertical.png" /></a></div>
-        <div class="header-container">
-            <header class="wrapper clearfix">
-            	<a href="../">
-                	<img src="img/logo.png" class="logo"/>
-                </a>
-                <br />
-                <div class="header_contact"><img src="img/phone-icon.png"/>+421-915-443-740</div>
-                <nav>
-                    <ul>
-                    	<!--reverse -->
-                                                                                           
-                        <li><a href="kontakt/">Kontakt</a></li>
-                        <li><a href="fotogaleria/">Fotogaléria</a></li>
-                        <li><a href="rozvoz-kvetov/">Rozvoz kvetov</a></li>
-                        <li><a href="sluzby/">Služby</a></li>
-                        <li><a href="" class="active">O nás</a></li>
-                       
-                    </ul>
-                </nav>
-            </header>
-        </div>
 
-        <div class="main-container">
-        	<div class="nameday-container">
-        		<div class="wrapper"> Dnes má meniny <span id="date_meniny" class="black">Erik</span>, zajtra <span id="date_meniny_zajtra" class="black">Viktor</span> </div>
-        	</div>
-            <div class="main wrapper clearfix">							
-					
-					<ul class="rslides">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+  		<div>
+  			<img src="img/Naomi_logo.png" />
+  		</div>
+  	</div>
+  	
+  	<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">O nás <span class="sr-only">(current)</span></a></li>
+        <li><a href="nase-sluzby">Naše služby</a></li>
+        <li><a href="rozvoz-kvetov">Rozvoz kvetov</a></li>
+        <li><a href="galeria">Fotogaléria</a></li>
+        <li><a href="kontakt">Kontakt</a></li>
+        <li><a style="color: blue;" href="http://www.facebook.com/NaomiSro" target="_blank"> Facebook</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text"><span class="glyphicon glyphicon-phone-alt"></span> &nbsp; +421 915 443 740</p></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  	
+    <div class="container main">
+    	<div class="row ">
+    		<div class="col-md-12 nameday-container">
+    			<div class="wrapper"> Dnes má meniny <span id="date_meniny" class="black">Erik</span>, zajtra <span id="date_meniny_zajtra" class="black">Viktor</span> </div>
+    		</div>
+    		
+    	</div>
+    	<div class="row ">
+    		<div class="col-md-12">
+    			<ul class="bxslider">
   						<li>
-  							<img src="img/1.jpg" alt="">
-  							<div class="slide_caption">
-  								<h1>Kvetinárstvo Naomi</h1>
-  								<p>
-  								prvotriedna kvalita <br />
-  								profesionalita <br />
-  								skvelá cena
-  								
-  								</p>
-  							</div>	
+  							<img src="img/1.jpg" alt="" title="Kvetinárstvo Naomi - prvotriedna kvalita, profesionalita, skvelá cena">
   						</li>
   						<li>
-  							<img src="img/5.jpg" alt="">
-  							<div class="slide_caption">
-  								<h1>Široký výber</h1>
-  								<p>
-  									črepníkove rastliny <br />
-  									rezané kvety <br />
-  									kvetináče
-  								</p>
-  								<a class="button_link float_right" href="sluzby/" >Viac ></a>
-  							</div>
+  							<img src="img/5.jpg" alt="" title="Široký výber - črepníkove rastliny, rezané kvety, kvetináče ">
   						</li>
   						<li>
-  							<img src="img/3.jpg" alt="">
-  							<div class="slide_caption">
-  								<h1>Svadobné kytice</h1>
-  								<p>
-  									výzdoba priestorov <br />
-  									dekorácie
-  								</p>
-  								<a class="button_link float_right" href="fotogaleria/">Galéria ></a>
-  							</div>
+  							<img src="img/3.jpg" alt="" title="Svadobné kytice, výzdoba priestorov, dekorácie">
+				
   						</li>
   						<li>
-  							<img src="img/4.jpg" alt="">
-  							<div class="slide_caption">
-  								<h1>Obdarujte svojich blízkych</h1>
-  								<p>Rozvážame kvety v Trenčíne a okolí</p>
-  								<a class="button_link float_right" href="rozvoz-kvetov/">Objednať ></a>
-  							</div>  							
+  							<img src="img/4.jpg" alt="" title="Obdarujte svojich blízkych - rozvážame kvety v Trenčíne a okolí">
+  							 							
   						</li>
 					</ul>
-				
-				
-                <article>
-                    <header>
-                        <h1>Kvetinárstvo Naomi</h1>
-                    </header>
-                    <section>
-                        <p>
+    		</div>
+    		
+    	</div>
+    	<div class="row ">
+    		<hr />
+    		<div class="col-md-8">
+    			<h1>Kvetinárstvo Naomi</h1>
+    			<p>
                         	Kvetinárstvo Naomi pôsobí na trhu <span class="brown">18</span> rokov. Ponúkame široký sortiment rezaných kvetov, črepníkových kvetov, letničiek a stromov do záhrad a veľa iného.                      	
                         	Ak si nevyberiete z našej bohatej ponuky, náš tým profesionálov Vám s radosťou pripraví kyticu, veniec, aranžmán alebo čokoľvek podľa vašich predstáv.
-                        	<a class="brown" href="rozvoz-kvetov/">Dovážame kytice</a>  v Trenčíne zdarma. 
-                        </p>
-                        <p>
+                        	<a class="brown" href="rozvoz-kvetov/">Dovážame kytice</a>  v Trenčíne zdarma. (objednávky nad 20 &euro;)
+                </p>
+                <p>
                         	Našu ponuku pravideľne dopĺňame novými a sezónnymi kvetmi. Zaručujeme tú najlepšiu kvalitu a čerstvosť našich kvetov. 
                         	Príďite sa presvedčiť na vlastné oči do niektorej z našich <a class="brown" href="kontakt/">troch predajní</a>.
-                        </p>
-                    </section>
-                    <section>
-                    	<p>
-                    		Sledujte novinky, akcie a zľavy na našom <a class="blue" href="http://www.facebook.com/Naomi.Kvety" target="_blank" >Facebooku</a>
-                    	</p>
-                    </section>
-                </article>
-
-                <aside>
-                    <h3>Rýchly kontakt:</h3>
-                    <table>
+                </p>
+                <p>
+                    		Sledujte novinky, akcie a zľavy na našom <a class="blue" href="http://www.facebook.com/NaomiSro" target="_blank" >Facebooku</a>
+                </p>
+    		</div>
+    		<div class="col-md-4">
+    			<h3>Rýchly kontakt:</h3>
+                    <table class="table">
                     	<tr>
-                    		<td><img src="img/phone-icon2.png" /></td>
-                    		<td>+421-744-15-20</td>
+                    		<td><span class="glyphicon glyphicon-phone-alt"></span></td>
+                    		<td>+421 744 15 20</td>
                     	</tr>
                     	<tr>
                     		<td></td>
-                    		<td>+421-915-443-740</td>
+                    		<td>+421 915 443 740</td>
                     	</tr>
                     	<tr>
-                    		<td><img src="img/email-icon.png" /></td>
-                    		<td><a href="#">info@naomi.sk</a></td>
+                    		<td><span class="glyphicon glyphicon-envelope"></span></td>
+                    		<td><a href="#">info@kvety-naomi.sk</a></td>
                     	</tr>
                     	<tr>
-                    		<td><img src="img/address-icon.png" /></td>
+                    		<td><span class="glyphicon glyphicon-home"></span></td>
                     		<td>Vajanského 1, Trenčín
                     			oproti Prioru
                     		</td>
                     	</tr>
                     	<tr>
-                    		<td><img src="img/address-icon.png" /></td>
+                    		<td></td>
                     		<td>STOP SHOP pri Tescu, Trenčín</td>
                     		
                     	</tr>
                     	<tr>
-                    		<td><img src="img/address-icon.png" /></td>
-                    		<td>OC Laugarício Trenčín
-                    			(darčekové a dekoratívne predmety)	
-                    		</td>
-                    	</tr>
-                    	<tr>
                     		<td><img src="img/FB_logo.png" /></td>
-                    		<td><a href="http://www.facebook.com/Naomi.Kvety" target="_blank">Facebook/Naomi</a></td>
+                    		<td><a href="http://www.facebook.com/NaomiSro" target="_blank">Facebook/Naomi</a></td>
                     	</tr>
                     </table>
                     <h3>Partneri:</h3>
                     <p>
                     	<a class="brown" href="http://alia.eu.sk" >Ália - svadobý salón</a>
                     </p>
-                </aside>
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h4>Copyright © 2014 Kvetinárstvo Naomi. Všetky práva vyhradené</h4>
-                <p>WebDesign: <a href="mailto:matoboor@gmail.com">Martin Boor</a></p>
-                <!-- hidden element. only for funcionality of nameday widget -->
+    		</div>
+    	</div>
+    </div>
+	<div class="footer ">
+      <div class="container main">
+      	<div class="row">
+      		<div class="col-md-4">
+      			<p><a href="#"> <span class="glyphicon glyphicon-chevron-up"></span>Hore</a></p>
+      		</div>
+      		<div class="col-md-4">
+      			<p>Naomi &copy; 2015</p>
+      		</div>
+      		<div class="col-md-4">
+      			<p>Web design <a href="mailto:matoboor@gmail.com">Martin Boor</a> </p>
+      			<!-- hidden element. only for funcionality of nameday widget -->
                 <span id="kasman"><a href="http://www.kasman.sk/javascript"></a></span>
                 <!-- ******************************************************* -->
-            </footer>
-        </div>
-
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-        
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
-		<script>
-  			$(function() {
-    			$(".rslides").responsiveSlides({auto:true, speed: 2000, timeout: 6000});
-  			});
-		</script>
-        
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-        
-
-    </body>
+      		</div>
+      	</div>
+      	
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+    
+    
+    <!-- Responsive slides -->
+    <script>
+  			$(document).ready(function(){
+  				$('.bxslider').bxSlider({
+  					auto:true,
+  					mode:'fade',
+  					speed:3000,
+  					pager:false,
+  					captions: true
+  					});
+			});
+	</script>
+  </body>
 </html>

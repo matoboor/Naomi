@@ -1,229 +1,244 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Naomi - Kontakty</title>
-        <meta name="description" content="Najväčšie kvetinárstvo v Trenčíne. Veľký výber, dobrá cena. Donáška kvetov.">
-        <meta name="keywords" content="naomi, kvety, kvetinarstvo, trencin, rozvoz, dekoracie, vyzdoba, kytice, darcek, sviatok" />
-        <meta name="author" content="Martin Boor" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="kvety, kvetinarstvo, trencin, rozvoz kvetov, naomi"/>
+	<meta name="description" content="Kvetinárstvo Naomi"/>
+	<meta name="ROBOTS" content="INDEX, FOLLOW"/>
+	<title>Kvetinárstvo Naomi</title>
+	
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="../css/normalize.min.css">
-        <link rel="stylesheet" href="../css/main.css">
+    <script src="/js/date.1.js"></script>
 
-        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<!-- <script src="js/responsiveslides.min.js"></script> -->
-		
-		<script src="../js/date.1.js"></script>
-		
-		
-		
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-		<div class="fb_button"><a href="http://www.facebook.com/Naomi.Kvety" target="_blank"><img src="../img/facebook_vertical.png" /></a></div>
-        <div class="header-container">
-            <header class="wrapper clearfix">
-            	<a name="up" id="up"></a>
-            	<a href="../">
-                	<img src="../img/logo.png" class="logo"/>
-                </a>
-                <br />
-                <div class="header_contact"><img src="../img/phone-icon.png"/>+421-915-443-740</div>
-                <nav>
-                    <ul>
-                    	<!--reverse -->
-                                                                                           
-                        <li><a href="../kontakt/" class="active">Kontakt</a></li>
-                        <li><a href="../fotogaleria/">Fotogaléria</a></li>
-                        <li><a href="../rozvoz-kvetov/">Rozvoz kvetov</a></li>
-                        <li><a href="../sluzby/">Služby</a></li>
-                        <li><a href="../" >O nás</a></li>
-                        
-                    </ul>
-                </nav>
-            </header>
-        </div>
 
-        <div class="main-container">
-        	<div class="nameday-container">
-        		<div class="wrapper"> Dnes má meniny <span id="date_meniny" class="black">Erik</span>, zajtra <span id="date_meniny_zajtra" class="black">Viktor</span> </div>
-        	</div>
-            <div class="main wrapper clearfix">							
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+  		<div>
+  			<img src="/img/Naomi_logo.png" />
+  		</div>
+  	</div>
+  	
+  	<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
 
-                <article id="full_wide">
-                    <header>
-                    	
-                        <h1>Kontakty</h1>
-                        
-                    </header>
-                    <section>
-                        <div class="service_wrapper" id="map1_div">
-                        	<h3><a class="green smooth_scroll" href="#Vajanskeho" targetID="map1">Vajanského 1</a></h3>
-                        	<a href="#map1" class="smooth_scroll" targetID="map1">               		
-                        		<p class="black left-align paragraph-padding">
-                        						
-                        						 Vajanského 147/1 <br />
-                        						 911 01 Trenčín <br />
-                        						 Centrum mesta, oproti Prioru <br />
-                        						 <br />
-                        						 Tel.: +421-744-15-20
-                        						 <hr />
-                        		</p>
-                        		<p class="black left-align paragraph-padding">
-                        						Otváracie hodiny: <br />
-                        						<table class="black paragraph-padding left-align">
-                        							<tr>
-                        								<td>Pon - Pia</td>
-                        								<td>8:00 - 19:00</td>
-                        							</tr>
-                        							<tr>
-                        								<td>Sob</td>
-                        								<td>8:00 - 13:00</td>
-                        							</tr>
-                        							<tr>
-                        								<td>Ned</td>
-                        								<td>Zatvorené</td>
-                        							</tr>
-                        						</table>
-                        						
-                        		</p>
-                        	</a>
-                        </div>
-                         <div class="service_wrapper" id="map2_div">
-                        	<h3><a class="green smooth_scroll" href="#Stop-Shop" targetID="map2">Stop Shop</a></h3>
-                        	<a href="#map2" class="smooth_scroll" targetID="map2">               		
-                        		<p class="black left-align paragraph-padding">
-                        						
-                        						 Stop Shop<br />
-                        						 Belá 6988 <br/>
-                        						 913 21 Trenčín <br />   
-                        						 <br />
-                        						 Tel.: +421-915-443-740                 						                                   					
-                        						 <hr />
-                        		</p>
-                        		<p class="black left-align paragraph-padding">
-                        						Otváracie hodiny: <br />
-                        						<table class="black paragraph-padding left-align">
-                        							<tr>
-                        								<td>Pon - Ned</td>
-                        								<td>9:00 - 19:00</td>
-                        							</tr>
-                        						</table>
-                        						
-                        		</p>
-                        	</a>
-                        </div>
-                        
-                        <div class="service_wrapper" id="map3_div">
-                        	<h3><a class="green smooth_scroll" href="#Laugaricio" targetID="map3">OC Laugarício</a></h3>
-                        	<a href="#Laugaricio" class="smooth_scroll" targetID="map3">               		
-                        		<p class="black left-align paragraph-padding">
-                        						
-                        						 Obchodné centrum Laugaricio <br />
-                        						 Belá, Trenčín <br />   
-                        						 <br />
-                        						 Darčekové a dekoratívne predmety                     						                                   					
-                        						 <hr />
-                        		</p>
-                        		<p class="black left-align paragraph-padding">
-                        						Otváracie hodiny: <br />
-                        						<table class="black paragraph-padding left-align">
-                        							<tr>
-                        								<td>Pon - Ned</td>
-                        								<td>9:00 - 21:00</td>
-                        							</tr>
-                        						</table>
-                        						
-                        		</p>
-                        	</a>
-                        </div>
-                    </section>
-                    <section id="Detail" >
-                    	<p class="paragraph-padding">
-                    			IČO: 44241909 &nbsp;&nbsp;
-                    			DIČ: SK2022646219 &nbsp;&nbsp;
-                    			Naomi s.r.o. - Trenčianska Turná 827, 913 21 &nbsp;&nbsp;
-                    			info@naomi.sk &nbsp;&nbsp;
-                    	</p>
-                    	
-                    </section>
-                    <section id="map1">
-                    	<a name="Vajanskeho"></a>
-                    	<h4>Vajanského 1</h4>
-                    	<p>oproti Prioru</p>
-                    	<div class="overlay" onClick="style.pointerEvents='none'"></div>
-                    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2623.133840618494!2d18.038886299999998!3d48.893786399999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714a18f3384f545%3A0x597862fd613e89f4!2sVajansk%C3%A9ho+147%2F1!5e0!3m2!1scs!2sus!4v1404138659286" width="99%" height="300" frameborder="0" style="border:0"> </iframe>
-                    	<a class="green uplink smooth_scroll" href="#up" targetID="up">Hore</a>
-                    </section>
-                    <section id="map2">
-                    	<a name="Stop-Shop"></a>
-                    	<h4>Stop Shop</h4>
-                    	<div class="overlay" onClick="style.pointerEvents='none'"></div>
-                    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5863101711925!2d18.021677300409507!3d48.86609853713101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69c28006290a61d5!2zQmlnIEJveCBUcmVuxI3DrW4!5e0!3m2!1scs!2sus!4v1404141528660" width="99%" height="300" frameborder="0" style="border:0"> </iframe>
-                    	<a class="green uplink smooth_scroll" href="#up" targetID="up">Hore</a>
-                    </section>
-                    <section id="map3">
-                    	<a name="Laugaricio"></a>
-                    	<h4>OC Laugarício</h4>
-                    	<p>Darčekové predmety</p>
-                    	<div class="overlay" onClick="style.pointerEvents='none'"></div>
-                    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6392230071815!2d18.020273082290934!3d48.865089659714734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33255b914e4aed1a!2sObchodn%C3%A9+centrum+Laugaricio!5e0!3m2!1scs!2sus!4v1404141234036" width="99%" height="300" frameborder="0" style="border:0"> </iframe>
-                    	<a class="green uplink smooth_scroll" href="#up" targetID="up">Hore</a>
-                    </section>                                    
-                </article>
-
-                
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h4>Copyright © 2014 Kvetinárstvo Naomi. Všetky práva vyhradené</h4>
-                <p>WebDesign: <a href="mailto:matoboor@gmail.com">Martin Boor</a></p>
-                <!-- hidden element. only for funcionality of nameday widget -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="/index.html">O nás </a></li>
+        <li ><a href="/nase-sluzby">Naše služby </a></li>
+        <li><a href="/rozvoz-kvetov">Rozvoz kvetov</a></li>
+        <li><a href="/galeria">Fotogaléria</a></li>
+        <li class="active"><a href="/kontakt">Kontakt <span class="sr-only">(current)</span></a></li>
+        <li><a style="color: blue;" href="http://www.facebook.com/NaomiSro" target="_blank"> Facebook</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text"><span class="glyphicon glyphicon-phone-alt"></span> &nbsp; +421 915 443 740</p></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  	
+    <div class="container main">
+    	<div class="row ">
+    		<div class="col-md-12 nameday-container">
+    			<div class="wrapper"> Dnes má meniny <span id="date_meniny" class="black">Erik</span>, zajtra <span id="date_meniny_zajtra" class="black">Viktor</span> </div>
+    		</div>
+    		
+    	</div>
+    	
+    	<div class="row">
+    		<div class="col-md-12">
+    			<h1>Kontakty</h1>
+    			<p>
+    				V Trenčíne nás môžete nájsť v dvoch kamenných obchodoch. Jeden sa nachádza priamo v centre mesta a druhý v obchodnej zóne pri nákupnom centre Laugarício. Kontaktovať nás môžete aj telefonicky, mailom alebo prostredníctvom našej <a href="http://www.facebook.com/NaomiSro" target="_blank">Facebook</a> stránky.
+    			</p>  			
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-4">
+    			<h3>Vajanského 1</h3>
+    			<table class="table">
+    				<tr>
+    					<td><span class="glyphicon glyphicon-home"></span> <b>Adresa:</b></td>
+    					<td>Vajanského 147/1</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td>911 01 Trenčín</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td>Centrum mesta, oproti Prioru</td>
+    				</tr>
+    				<tr>
+    					<td><span class="glyphicon glyphicon-phone-alt"></span> <b>Telefón:</b></td>
+    					<td>+421 744 15 20</td>
+    				</tr>
+    			</table>
+    			<span class="glyphicon glyphicon-time" _></span> <b>Otváracie hodiny</b>
+    			<table class="table">
+    				<tr>
+    					<td>
+    						Pondelok-Piatok
+    					</td>
+    					<td>
+    						8:00 - 18:00
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						Sobota
+    					</td>
+    					<td>
+    						8:00 - 13:00
+    					</td>
+    				</tr>
+					<tr>
+    					<td>
+    						Nedela
+    					</td>
+    					<td>
+    						Zatvorené
+    					</td>
+    				</tr>
+    			</table>
+    		</div>
+    		<div class="col-md-8">
+    			<div id="canvas" class="map">
+    				<iframe id="map_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2623.135802987465!2d18.038699!3d48.89374899999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714a18f34fe8a55%3A0x6646118570c1939b!2sKvety+Naomi!5e0!3m2!1scs!2s!4v1429560709012" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+    			</div>
+    		</div>
+    	</div>
+    	<br />
+    	<hr>
+    	<br />
+    	<div class="row">
+    		<div class="col-md-4">
+    			<h3>Stop Shop</h3>
+    			<table class="table">
+    				<tr>
+    					<td><span class="glyphicon glyphicon-home"></span> <b>Adresa:</b></td>
+    					<td>Stop Shop, Belá 6988</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td>913 21 Trenčín</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td>Oproti OC Laugarício</td>
+    				</tr>
+    				<tr>
+    					<td><span class="glyphicon glyphicon-phone-alt"></span> <b>Telefón:</b></td>
+    					<td>+421 915 443 740</td>
+    				</tr>
+    			</table>
+    			<span class="glyphicon glyphicon-time" _></span> <b>Otváracie hodiny</b>
+    			<table class="table">
+    				<tr>
+    					<td>
+    						Pondelok-Nedela
+    					</td>
+    					<td>
+    						9:00 - 19:00
+    					</td>
+    				</tr>
+    				
+    			</table>
+    		</div>
+    		<div class="col-md-8">
+    			<div id="canvas1" class="map">
+    				<iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.563733334112!2d18.021121!3d48.86652900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714a1612b2f8183%3A0xab8e9a887e72d4b7!2sKvety+Naomi!5e0!3m2!1scs!2s!4v1429564385899" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-12 center">
+    			<hr />
+    			<p>IČO: 44241909    DIČ: SK2022646219    Naomi s.r.o. - Trenčianska Turná 827, 913 21    info@kvety-naomi.sk</p>
+    		</div>
+    	</div>
+    </div>
+    
+	<div class="footer ">
+      <div class="container main">
+      	<div class="row">
+      		<div class="col-md-4">
+      			<p><a href="#"> <span class="glyphicon glyphicon-chevron-up"></span>Hore</a></p>
+      		</div>
+      		<div class="col-md-4">
+      			<p>Naomi &copy; 2015</p>
+      		</div>
+      		<div class="col-md-4">
+      			<p>Web design <a href="mailto:matoboor@gmail.com">Martin Boor</a> </p>
+      			<!-- hidden element. only for funcionality of nameday widget -->
                 <span id="kasman"><a href="http://www.kasman.sk/javascript"></a></span>
                 <!-- ******************************************************* -->
-            </footer>
-        </div>
-		
-		<script type="text/javascript">
-	    	$(document).ready(function () {                       
-                jQuery('.smooth_scroll').click(function (event) {
-                    event.stopPropagation();                
-                    var idTo = jQuery(this).attr('targetID');                
-                    var Position = jQuery('[id="' + idTo + '"]').offset().top;
-                    jQuery('html, body').animate({ scrollTop: Position }, 'slow');
-                    return false;
-                });
-			});
-	    </script>
-		
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-        
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
-                  
-        <script src="js/main.js"></script>
+      		</div>
+      	</div>
+      	
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- bxSlider Javascript file -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-        
+    
+    
+    <!-- Responsive slides -->
+    <script>
+    $(document).ready(function () {
 
-    </body>
+        // you want to enable the pointer events only on click;
+
+        $('#map_canvas').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#map_canvas1').addClass('scrolloff'); 
+        $('#canvas').on('click', function () {
+            $('#map_canvas').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+		$('#canvas1').on('click', function () {
+            $('#map_canvas1').removeClass('scrolloff'); // set the pointer events true on click
+        });
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#map_canvas").mouseleave(function () {
+            $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+        
+        $("#map_canvas1").mouseleave(function () {
+            $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+    });
+	</script>
+  </body>
 </html>

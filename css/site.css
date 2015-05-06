@@ -1,0 +1,100 @@
+.header {
+	text-align: center;
+	background: url("../img/background.png");
+	background-attachment: fixed;
+}
+
+.header img {
+	max-width:100%;
+	
+}
+
+h1, h2, h3 {
+	color:#66666B;
+	font-family: "Bookshelf Symbol 7";
+	text-shadow: 1px 1px 10px #d0d0d0;
+}
+
+a {
+	color:#66666B;
+	font-weight: bold;
+}
+
+a:hover {
+	color: black;
+}
+
+.main {
+	background:white;
+	color:#4D4D4D;
+	font-size: 1.1em;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.nav-pills a {
+	color:white;
+	background: #3b719f;
+}
+
+.nav-pills > li > a:hover {
+	color: black;
+	background-color: transparent;
+}
+
+.center { 
+	text-align:center;
+	}
+	
+.center img {
+	max-width: 100%;
+}
+
+.h-center {
+	margin-top:30px;
+	margin-bottom: auto;
+	}
+
+.footer {
+	padding: 30px 30px;
+	margin-top:60px;
+	border-top: 1px solid #D0D0D0;
+	background: white;
+}
+.nameday-container {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(182,206,222,1) 23%, rgba(182,206,222,1) 74%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(23%, rgba(182,206,222,1)), color-stop(74%, rgba(182,206,222,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(182,206,222,1) 23%, rgba(182,206,222,1) 74%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(182,206,222,1) 23%, rgba(182,206,222,1) 74%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(182,206,222,1) 23%, rgba(182,206,222,1) 74%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(182,206,222,1) 23%, rgba(182,206,222,1) 74%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+	color:black;
+	text-align: center;
+	font-size: medium;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	
+}
+
+.scrolloff {
+        pointer-events: none;
+}
+
+.thumb {
+	height:400px;
+	width:auto;
+}
+
+#kasman {
+	display: none;
+}
+
+body {
+	background: url('../img/body_background.jpg');
+	background-attachment: fixed;
+}
